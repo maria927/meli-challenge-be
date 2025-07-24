@@ -1,9 +1,9 @@
-package com.meli.challenge.domain.usecase.product;
+package com.meli.challenge.application.service;
 
-import com.meli.challenge.domain.model.ProductResponse;
-import com.meli.challenge.domain.port.in.ProductServicePort;
-import com.meli.challenge.domain.port.out.JsonProductPort;
-import com.meli.challenge.domain.usecase.product.exception.ProductNotFoundException;
+import com.meli.challenge.domain.model.product.ProductResponse;
+import com.meli.challenge.application.port.in.ProductServicePort;
+import com.meli.challenge.application.port.out.JsonProductPort;
+import com.meli.challenge.application.exception.ProductNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service

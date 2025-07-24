@@ -1,6 +1,6 @@
-package com.meli.challenge.domain.port.out;
+package com.meli.challenge.application.port.out;
 
-import com.meli.challenge.domain.model.ProductResponse;
+import com.meli.challenge.domain.model.product.ProductResponse;
 
 import java.util.Optional;
 

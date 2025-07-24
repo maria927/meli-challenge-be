@@ -1,6 +1,6 @@
 package com.meli.challenge.infraestructure.adapter.port.in.controller;
 
-import com.meli.challenge.domain.port.in.ProductServicePort;
+import com.meli.challenge.application.port.in.ProductServicePort;
 import com.meli.challenge.infraestructure.adapter.port.in.controller.dto.ProductResponseDTO;
 import jakarta.validation.constraints.NotBlank;
 import org.springframework.http.ResponseEntity;

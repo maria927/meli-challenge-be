@@ -1,6 +1,6 @@
 package com.meli.challenge.infraestructure.adapter.port.out.file.mapper;
 
-import com.meli.challenge.domain.model.ProductResponse;
+import com.meli.challenge.domain.model.product.ProductResponse;
 import com.meli.challenge.infraestructure.adapter.port.out.file.entity.ProductEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

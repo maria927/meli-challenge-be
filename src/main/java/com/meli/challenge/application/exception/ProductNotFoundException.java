@@ -1,4 +1,4 @@
-package com.meli.challenge.domain.usecase.product.exception;
+package com.meli.challenge.application.exception;
 
 public class ProductNotFoundException extends RuntimeException {
     public ProductNotFoundException(String productId) {

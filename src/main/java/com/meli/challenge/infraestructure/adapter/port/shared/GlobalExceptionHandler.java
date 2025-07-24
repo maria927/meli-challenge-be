@@ -1,6 +1,6 @@
 package com.meli.challenge.infraestructure.adapter.port.shared;
 
-import com.meli.challenge.domain.usecase.product.exception.ProductNotFoundException;
+import com.meli.challenge.application.exception.ProductNotFoundException;
 import com.meli.challenge.infraestructure.adapter.port.shared.dto.ErrorResponse;
 import com.meli.challenge.infraestructure.adapter.port.shared.exception.ReadFileException;
 import org.springframework.http.HttpStatus;

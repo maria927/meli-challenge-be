@@ -1,4 +1,4 @@
-package com.meli.challenge.domain.model;
+package com.meli.challenge.domain.model.product;
 
 import lombok.Builder;
 

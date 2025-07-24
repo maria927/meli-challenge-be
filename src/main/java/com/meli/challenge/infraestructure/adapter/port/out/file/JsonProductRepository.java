@@ -2,8 +2,8 @@ package com.meli.challenge.infraestructure.adapter.port.out.file;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.meli.challenge.domain.model.ProductResponse;
-import com.meli.challenge.domain.port.out.JsonProductPort;
+import com.meli.challenge.domain.model.product.ProductResponse;
+import com.meli.challenge.application.port.out.JsonProductPort;
 import com.meli.challenge.infraestructure.adapter.port.out.file.entity.ProductEntity;
 import com.meli.challenge.infraestructure.adapter.port.shared.exception.ReadFileException;
 import jakarta.annotation.PostConstruct;
