@@ -1,15 +1,10 @@
 package com.meli.challenge.infraestructure.adapter.port.shared.dto;
 
-import lombok.Data;
+import io.swagger.v3.oas.annotations.media.Schema;
 
-@Data
-public class ErrorResponse {
-    private String message;
-    private String timestamp;
-
-    public ErrorResponse(String message) {
-        this.message = message;
-        this.timestamp = java.time.LocalDateTime.now().toString();
-    }
-
-}
+@Schema(name = "ErrorResponse", description = "Detalles del error")
+public record ErrorResponse(
+        @Schema(description = "Mensaje del error")
+        String message,
+        @Schema(description = "Fecha y hora del error")
+        String timestamp) {}

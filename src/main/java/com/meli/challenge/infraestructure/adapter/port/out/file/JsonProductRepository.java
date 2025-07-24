@@ -2,8 +2,9 @@ package com.meli.challenge.infraestructure.adapter.port.out.file;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.meli.challenge.domain.model.product.ProductResponse;
 import com.meli.challenge.application.port.out.JsonProductPort;
+import com.meli.challenge.domain.model.product.ProductResponse;
+import com.meli.challenge.infraestructure.adapter.port.logging.Loggable;
 import com.meli.challenge.infraestructure.adapter.port.out.file.entity.ProductEntity;
 import com.meli.challenge.infraestructure.adapter.port.shared.exception.ReadFileException;
 import jakarta.annotation.PostConstruct;
@@ -30,8 +31,11 @@ public class JsonProductRepository implements JsonProductPort {
         this.objectMapper = objectMapper;
     }
 
+    /**
+     * Carga del archivo JSON de productos, para convertirlo en un mapa y este pueda ser accedido por id.
+     */
     @PostConstruct
-    void init() {
+    void initFileContent() {
         try (InputStream is = getClass().getResourceAsStream("/files/products.json")) {
             store = objectMapper
                     .readValue(is, new TypeReference<List<ProductEntity>>(){})
@@ -43,7 +47,13 @@ public class JsonProductRepository implements JsonProductPort {
 
     }
 
+    /**
+     * Busca el producto según el id proporcionado.
+     * @param id id del producto
+     * @return producto mapeado al objeto ProductResponse
+     */
     @Override
+    @Loggable("Lectura de archivos")
     public Optional<ProductResponse> findProductById(String id) {
         return Optional.ofNullable(PRODUCT_REPOSITORY_MAPPER.productEntityToDomain(store.get(id)));
     }
