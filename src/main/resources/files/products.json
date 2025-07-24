@@ -1,0 +1,42 @@
+[
+  {
+    "id": "MLA172839",
+    "title": "Samsung Galaxy A55 5G Dual SIM 256 GB Azul",
+    "description": "Pantalla de 6.6, 8 GB de RAM, cámara trasera de 50 Mpx, procesador octa-core y batería de larga duración.",
+    "price": { "currency": "ARS", "amount": 439, "decimals": 0 },
+    "discount": 0.12,
+    "pictures": [
+      "https://mi-cdn.com/images/MLA172839_1.jpg",
+      "https://mi-cdn.com/images/MLA172839_2.jpg",
+      "https://mi-cdn.com/images/MLA172839_3.jpg"
+    ],
+    "condition": "new",
+    "soldQuantity": 120,
+    "stock": 50,
+    "installments": { "count": 10, "amount": 43.90, "currency": "ARS", "interestFree": true },
+    "paymentMethods": {
+      "credit": ["Visa","MasterCard","American Express"],
+      "debit": ["Visa","MasterCard"],
+      "cash": ["PagoFácil","RapiPago"]
+    },
+    "seller": {
+      "id": "SELLER123",
+      "name": "Samsung Oficial",
+      "reputation": "high",
+      "salesCount": 5000,
+      "location": "Buenos Aires, Argentina"
+    },
+    "characteristics": {
+      "screenSize": "6.6",
+      "ram": "8 GB",
+      "storage": "256 GB",
+      "rearCamera": "50 Mpx",
+      "frontCamera": "32 Mpx",
+      "nfc": true
+    },
+    "shipping": {
+      "freeShipping": true,
+      "estimatedDelivery": "3-5 days"
+    }
+  }
+]
