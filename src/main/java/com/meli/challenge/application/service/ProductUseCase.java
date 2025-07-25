@@ -18,13 +18,13 @@ public class ProductUseCase implements ProductServicePort {
 
     /**
      * Obtiene el producto por id, o si no lo encuentra lanza una excepción
-     * @param id id del producto
+     * @param productId id del producto
      * @return producto mapeado como ProductResponse
      */
     @Override
     @Loggable("Caso de uso de Productos")
-    public ProductResponse getProductById(String id) {
-        return productRepository.findProductById(id)
-                .orElseThrow(() -> new ProductNotFoundException(id));
+    public ProductResponse getProductById(String productId) {
+        return productRepository.findProductById(productId)
+                .orElseThrow(() -> new ProductNotFoundException(productId));
     }
 }

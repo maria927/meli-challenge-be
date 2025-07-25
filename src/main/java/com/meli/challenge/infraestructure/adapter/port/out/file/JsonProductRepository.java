@@ -41,20 +41,20 @@ public class JsonProductRepository implements JsonProductPort {
                     .readValue(is, new TypeReference<List<ProductEntity>>(){})
                     .stream()
                     .collect(Collectors.toMap(ProductEntity::id, Function.identity()));
-        } catch (IOException e) {
-            throw new ReadFileException(e.getMessage());
+        } catch (IOException ex) {
+            throw new ReadFileException(ex.getMessage());
         }
 
     }
 
     /**
      * Busca el producto según el id proporcionado.
-     * @param id id del producto
+     * @param productId id del producto
      * @return producto mapeado al objeto ProductResponse
      */
     @Override
     @Loggable("Lectura de archivos")
-    public Optional<ProductResponse> findProductById(String id) {
-        return Optional.ofNullable(PRODUCT_REPOSITORY_MAPPER.productEntityToDomain(store.get(id)));
+    public Optional<ProductResponse> findProductById(String productId) {
+        return Optional.ofNullable(PRODUCT_REPOSITORY_MAPPER.productEntityToDomain(store.get(productId)));
     }
 }

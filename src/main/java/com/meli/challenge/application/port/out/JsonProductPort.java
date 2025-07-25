@@ -6,5 +6,5 @@ import java.util.Optional;
 
 public interface JsonProductPort {
 
-    Optional<ProductResponse> findProductById(String id);
+    Optional<ProductResponse> findProductById(String productId);
 }
