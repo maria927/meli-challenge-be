@@ -42,7 +42,7 @@ public class JsonProductRepository implements JsonProductPort {
                     .stream()
                     .collect(Collectors.toMap(ProductEntity::id, Function.identity()));
         } catch (IOException e) {
-            throw new ReadFileException(e);
+            throw new ReadFileException(e.getMessage());
         }
 
     }
