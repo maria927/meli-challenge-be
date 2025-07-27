@@ -3,7 +3,6 @@ package com.meli.challenge.domain.model.product;
 import lombok.Builder;
 
 import java.util.List;
-import java.util.Map;
 
 @Builder
 public record ProductResponse(
@@ -19,7 +18,8 @@ public record ProductResponse(
         Installment installments,
         PaymentMethods paymentMethods,
         Seller seller,
-        Map<String, Object> characteristics,
+        List<Specification> specifications,
+        List<String> characteristics,
         Shipping shipping
 ) {}
 

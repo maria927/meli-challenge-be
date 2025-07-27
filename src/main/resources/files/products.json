@@ -13,6 +13,8 @@
     "condition": "new",
     "soldQuantity": 120,
     "stock": 50,
+    "rating": 4.5,
+    "reviewCount": 950,
     "installments": { "count": 10, "amount": 43.90, "currency": "ARS", "interestFree": true },
     "paymentMethods": {
       "credit": ["Visa","MasterCard","American Express"],
@@ -26,14 +28,18 @@
       "salesCount": 5000,
       "location": "Buenos Aires, Argentina"
     },
-    "characteristics": {
-      "screenSize": "6.6",
-      "ram": "8 GB",
-      "storage": "256 GB",
-      "rearCamera": "50 Mpx",
-      "frontCamera": "32 Mpx",
-      "nfc": true
-    },
+    "characteristics": [
+      "Memoria RAM: 8 GB",
+      "Procesador Samsung Exynos 1480",
+      "Dispositivo desbloqueado para que lo conectes a cualquier compañía telefónica preferida"
+    ],
+    "specifications": [
+      { "label": "Tamaño de la pantalla", "value": "6.6" },
+      { "label": "Ram", "value": "8 GB" },
+      { "label": "Almacenamiento", "value": "256 GB" },
+      { "label": "Cámara principal", "value": "50 mpx" },
+      { "label": "Cámara frontal", "value": "32 mpx" }
+    ],
     "shipping": {
       "freeShipping": true,
       "estimatedDelivery": "3-5 days"

@@ -44,13 +44,14 @@ public class ProductMock {
                         .salesCount(5000)
                         .location("Buenos Aires, Argentina")
                         .build())
-                .characteristics(Map.of(
-                        "screenSize", "6.6",
-                        "ram", "8 GB",
-                        "storage", "256 GB",
-                        "rearCamera", "50 Mpx",
-                        "frontCamera", "32 Mpx",
-                        "nfc", true))
+                .characteristics(List.of(
+                        "Memoria RAM: 8 GB",
+                        "Procesador Samsung Exynos 1480",
+                        "Dispositivo desbloqueado para que lo conectes a cualquier compañía telefónica preferida"))
+                .specifications(List.of(Specification.builder()
+                        .label("Tamaño de la pantalla")
+                        .value("6.6")
+                        .build()))
                 .shipping(Shipping.builder()
                         .freeShipping(true)
                         .estimatedDelivery("3-5 days")
@@ -94,14 +95,14 @@ public class ProductMock {
                         .salesCount(3200)
                         .location("Córdoba, Argentina")
                         .build())
-                .characteristics(Map.of(
-                        "screenSize", "6.7",
-                        "ram", "12 GB",
-                        "storage", "512 GB",
-                        "rearCamera", "108 Mpx",
-                        "frontCamera", "32 Mpx",
-                        "nfc", true,
-                        "refreshRate", "144 Hz"))
+                .characteristics(List.of(
+                        "Memoria RAM: 8 GB",
+                        "Procesador Samsung Exynos 1480",
+                        "Dispositivo desbloqueado para que lo conectes a cualquier compañía telefónica preferida"))
+                .specifications(List.of(SpecificationEntity.builder()
+                        .label("")
+                        .value("")
+                        .build()))
                 .shipping(ShippingEntity.builder()
                         .freeShipping(true)
                         .estimatedDelivery("2-4 days")
