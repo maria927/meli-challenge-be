@@ -4,13 +4,12 @@ import com.meli.challenge.domain.model.product.*;
 import com.meli.challenge.infraestructure.adapter.port.out.file.entity.*;
 
 import java.util.List;
-import java.util.Map;
 
 public class ProductMock {
 
     public static ProductResponse buildSamsungGalaxyA55() {
         return ProductResponse.builder()
-                .id("MLA172839")
+                .id("ML1")
                 .title("Samsung Galaxy A55 5G Dual SIM 256 GB Azul")
                 .description("Pantalla de 6.6, 8 GB de RAM, cámara trasera de 50 Mpx, procesador octa-core y batería de larga duración.")
                 .price(Price.builder()
@@ -20,12 +19,14 @@ public class ProductMock {
                         .build())
                 .discount(0.12)
                 .pictures(List.of(
-                        "https://mi-cdn.com/images/MLA172839_1.jpg",
-                        "https://mi-cdn.com/images/MLA172839_2.jpg",
-                        "https://mi-cdn.com/images/MLA172839_3.jpg"))
+                        "https://mi-cdn.com/images/ML1_1.jpg",
+                        "https://mi-cdn.com/images/ML1_2.jpg",
+                        "https://mi-cdn.com/images/ML1_3.jpg"))
                 .condition("new")
                 .soldQuantity(120)
                 .stock(50)
+                .rating(4.6)
+                .reviewCount(30)
                 .installments(Installment.builder()
                         .count(10)
                         .amount(43.90)
@@ -77,6 +78,8 @@ public class ProductMock {
                 .condition("new")
                 .soldQuantity(85)
                 .stock(40)
+                .rating(4.6)
+                .reviewCount(30)
                 .installments(InstallmentEntity.builder()
                         .count(12)
                         .amount(54.08)

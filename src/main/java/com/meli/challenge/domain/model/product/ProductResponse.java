@@ -15,6 +15,8 @@ public record ProductResponse(
         String condition,
         int soldQuantity,
         int stock,
+        double rating,
+        int reviewCount,
         Installment installments,
         PaymentMethods paymentMethods,
         Seller seller,

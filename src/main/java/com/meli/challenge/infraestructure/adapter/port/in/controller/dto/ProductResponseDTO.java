@@ -36,6 +36,12 @@ public record ProductResponseDTO(
     @Schema(description = "Cantidad disponible en inventario", example = "30")
     int stock,
 
+    @Schema(description = "Calificación del producto", example = "4.5")
+    double rating,
+
+    @Schema(description = "Cantiad de opiniones del producto", example = "45")
+    int reviewCount,
+
     @Schema(description = "Información de cuotas: cantidad de pagos y monto por pago")
     InstallmentDTO installments,
 

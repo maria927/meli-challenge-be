@@ -15,6 +15,8 @@ public record ProductEntity(
         String condition,
         int soldQuantity,
         int stock,
+        double rating,
+        int reviewCount,
         InstallmentEntity installments,
         PaymentMethodsEntity paymentMethods,
         SellerEntity seller,

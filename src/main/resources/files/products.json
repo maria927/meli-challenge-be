@@ -1,21 +1,21 @@
 [
   {
-    "id": "MLA172839",
+    "id": "ML1",
     "title": "Samsung Galaxy A55 5G Dual SIM 256 GB Azul",
     "description": "Pantalla de 6.6, 8 GB de RAM, cámara trasera de 50 Mpx, procesador octa-core y batería de larga duración.",
     "price": { "currency": "ARS", "amount": 439, "decimals": 0 },
-    "discount": 0.12,
+    "discount": 12,
     "pictures": [
-      "https://mi-cdn.com/images/MLA172839_1.jpg",
-      "https://mi-cdn.com/images/MLA172839_2.jpg",
-      "https://mi-cdn.com/images/MLA172839_3.jpg"
+      "assets/samsung 1.jpg",
+      "assets/samsung 2.jpg",
+      "assets/samsung 3.jpg"
     ],
     "condition": "new",
     "soldQuantity": 120,
     "stock": 50,
     "rating": 4.5,
-    "reviewCount": 950,
-    "installments": { "count": 10, "amount": 43.90, "currency": "ARS", "interestFree": true },
+    "reviewCount": 35,
+    "installments": { "count": 10, "amount": 38.63, "currency": "ARS", "interestFree": true },
     "paymentMethods": {
       "credit": ["Visa","MasterCard","American Express"],
       "debit": ["Visa","MasterCard"],
@@ -24,7 +24,7 @@
     "seller": {
       "id": "SELLER123",
       "name": "Samsung Oficial",
-      "reputation": "high",
+      "reputation": "Alta",
       "salesCount": 5000,
       "location": "Buenos Aires, Argentina"
     },
@@ -42,7 +42,52 @@
     ],
     "shipping": {
       "freeShipping": true,
-      "estimatedDelivery": "3-5 days"
+      "estimatedDelivery": "3-5 días"
+    }
+  },
+  {
+    "id": "ML2",
+    "title": "Tenis Duramo Adidas",
+    "description": "Zapatos Adidas unisex perfecto para Fitness. Brinda confort a tus entrenamientos",
+    "price": { "currency": "ARS", "amount": 90, "decimals": 0 },
+    "discount": 0,
+    "pictures": [
+      "assets/shoes1.png",
+      "assets/shoes2.png",
+      "assets/shoes3.png"
+    ],
+    "condition": "new",
+    "soldQuantity": 2,
+    "stock": 0,
+    "rating": 3.4,
+    "reviewCount": 6,
+    "installments": { "count": 5, "amount": 18, "currency": "ARS", "interestFree": false },
+    "paymentMethods": {
+      "credit": ["Visa"],
+      "debit": ["MasterCard"],
+      "cash": ["RapiPago"]
+    },
+    "seller": {
+      "id": "SELLER568",
+      "name": "Shoes Oficial",
+      "reputation": "Media",
+      "salesCount": 40,
+      "location": "Buenos Aires, Argentina"
+    },
+    "characteristics": [
+      "Ajuste clásico",
+      "Parte superior de malla",
+      "Sistema de amarre de cordones",
+      "Peso: 272 gramos"
+    ],
+    "specifications": [
+      { "label": "Marca", "value": "Adidas" },
+      { "label": "Color", "value": "Azul" },
+      { "label": "Material de suela", "value": "Sintético" }
+    ],
+    "shipping": {
+      "freeShipping": false,
+      "estimatedDelivery": "7-8 días"
     }
   }
 ]
