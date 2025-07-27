@@ -3,7 +3,6 @@ package com.meli.challenge.infraestructure.adapter.port.out.file.entity;
 import lombok.Builder;
 
 import java.util.List;
-import java.util.Map;
 
 @Builder
 public record ProductEntity(
@@ -16,10 +15,13 @@ public record ProductEntity(
         String condition,
         int soldQuantity,
         int stock,
+        double rating,
+        int reviewCount,
         InstallmentEntity installments,
         PaymentMethodsEntity paymentMethods,
         SellerEntity seller,
-        Map<String, Object> characteristics,
+        List<SpecificationEntity> specifications,
+        List<String> characteristics,
         ShippingEntity shipping
 ) {}
 

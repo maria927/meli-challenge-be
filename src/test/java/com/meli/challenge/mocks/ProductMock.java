@@ -4,13 +4,12 @@ import com.meli.challenge.domain.model.product.*;
 import com.meli.challenge.infraestructure.adapter.port.out.file.entity.*;
 
 import java.util.List;
-import java.util.Map;
 
 public class ProductMock {
 
     public static ProductResponse buildSamsungGalaxyA55() {
         return ProductResponse.builder()
-                .id("MLA172839")
+                .id("ML1")
                 .title("Samsung Galaxy A55 5G Dual SIM 256 GB Azul")
                 .description("Pantalla de 6.6, 8 GB de RAM, cámara trasera de 50 Mpx, procesador octa-core y batería de larga duración.")
                 .price(Price.builder()
@@ -20,12 +19,14 @@ public class ProductMock {
                         .build())
                 .discount(0.12)
                 .pictures(List.of(
-                        "https://mi-cdn.com/images/MLA172839_1.jpg",
-                        "https://mi-cdn.com/images/MLA172839_2.jpg",
-                        "https://mi-cdn.com/images/MLA172839_3.jpg"))
+                        "https://mi-cdn.com/images/ML1_1.jpg",
+                        "https://mi-cdn.com/images/ML1_2.jpg",
+                        "https://mi-cdn.com/images/ML1_3.jpg"))
                 .condition("new")
                 .soldQuantity(120)
                 .stock(50)
+                .rating(4.6)
+                .reviewCount(30)
                 .installments(Installment.builder()
                         .count(10)
                         .amount(43.90)
@@ -44,13 +45,14 @@ public class ProductMock {
                         .salesCount(5000)
                         .location("Buenos Aires, Argentina")
                         .build())
-                .characteristics(Map.of(
-                        "screenSize", "6.6",
-                        "ram", "8 GB",
-                        "storage", "256 GB",
-                        "rearCamera", "50 Mpx",
-                        "frontCamera", "32 Mpx",
-                        "nfc", true))
+                .characteristics(List.of(
+                        "Memoria RAM: 8 GB",
+                        "Procesador Samsung Exynos 1480",
+                        "Dispositivo desbloqueado para que lo conectes a cualquier compañía telefónica preferida"))
+                .specifications(List.of(Specification.builder()
+                        .label("Tamaño de la pantalla")
+                        .value("6.6")
+                        .build()))
                 .shipping(Shipping.builder()
                         .freeShipping(true)
                         .estimatedDelivery("3-5 days")
@@ -76,6 +78,8 @@ public class ProductMock {
                 .condition("new")
                 .soldQuantity(85)
                 .stock(40)
+                .rating(4.6)
+                .reviewCount(30)
                 .installments(InstallmentEntity.builder()
                         .count(12)
                         .amount(54.08)
@@ -94,14 +98,14 @@ public class ProductMock {
                         .salesCount(3200)
                         .location("Córdoba, Argentina")
                         .build())
-                .characteristics(Map.of(
-                        "screenSize", "6.7",
-                        "ram", "12 GB",
-                        "storage", "512 GB",
-                        "rearCamera", "108 Mpx",
-                        "frontCamera", "32 Mpx",
-                        "nfc", true,
-                        "refreshRate", "144 Hz"))
+                .characteristics(List.of(
+                        "Memoria RAM: 8 GB",
+                        "Procesador Samsung Exynos 1480",
+                        "Dispositivo desbloqueado para que lo conectes a cualquier compañía telefónica preferida"))
+                .specifications(List.of(SpecificationEntity.builder()
+                        .label("")
+                        .value("")
+                        .build()))
                 .shipping(ShippingEntity.builder()
                         .freeShipping(true)
                         .estimatedDelivery("2-4 days")

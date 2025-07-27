@@ -4,7 +4,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 
 import java.util.List;
-import java.util.Map;
 
 @Builder
 @Schema(description = "DTO de respuesta para producto")
@@ -37,6 +36,12 @@ public record ProductResponseDTO(
     @Schema(description = "Cantidad disponible en inventario", example = "30")
     int stock,
 
+    @Schema(description = "Calificación del producto", example = "4.5")
+    double rating,
+
+    @Schema(description = "Cantiad de opiniones del producto", example = "45")
+    int reviewCount,
+
     @Schema(description = "Información de cuotas: cantidad de pagos y monto por pago")
     InstallmentDTO installments,
 
@@ -46,8 +51,11 @@ public record ProductResponseDTO(
     @Schema(description = "Información del vendedor: reputación, tienda, etc.")
     SellerDTO seller,
 
-    @Schema(description = "Características adicionales del producto en formato clave-valor")
-    Map<String, Object> characteristics,
+    @Schema(description = "Especificaciones adicionales del producto")
+    List<SpecificationDTO> specifications,
+
+    @Schema(description = "Características principales del producto")
+    List<String> characteristics,
 
     @Schema(description = "Información de envío: tipo, costos, regiones disponibles")
     ShippingDTO shipping

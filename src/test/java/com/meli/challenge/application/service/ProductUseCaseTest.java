@@ -26,7 +26,7 @@ class ProductUseCaseTest {
     @Test
     void getProductByIdWhenProductExists() {
 
-        String productId = "MLA172839";
+        String productId = "ML1";
         ProductResponse expectedProduct = ProductMock.buildSamsungGalaxyA55();
         when(productRepository.findProductById(productId)).thenReturn(Optional.of(expectedProduct));
 
